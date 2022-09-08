@@ -26,6 +26,8 @@ class ViewController: UIViewController {
 //        testMemento()
 //        testObserver()
         testState()
+        
+        /////////////////////////
     }
 
     // MARK: - CREATIONAL
@@ -130,7 +132,17 @@ class ViewController: UIViewController {
     }
     
     private func testState() {
-        
+        let context = MobileAlertStateContext()
+        context.alert()
+        context.alert()
+        sleep(2)
+        context.setState(state: Vibration())
+        context.alert()
+        context.alert()
+        sleep(2)
+        context.setState(state: Silent())
+        context.alert()
+        context.alert()
     }
     
     // MARK: - BEHAVIORAL
