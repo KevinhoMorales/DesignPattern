@@ -31,6 +31,12 @@
 		BC95060728B09DC7002D30EA /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95060628B09DC7002D30EA /* CreditCard.swift */; };
 		BC95060928B09E13002D30EA /* CreditCardsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95060828B09E13002D30EA /* CreditCardsCollection.swift */; };
 		BC95060B28B09E9E002D30EA /* CreditCardsIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95060A28B09E9E002D30EA /* CreditCardsIterator.swift */; };
+		BCC96A1528C9024A0086FD49 /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC96A1428C9024A0086FD49 /* TrafficLight.swift */; };
+		BCC96A1728C9027D0086FD49 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC96A1628C9027D0086FD49 /* Observer.swift */; };
+		BCC96A1928C902A40086FD49 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC96A1828C902A40086FD49 /* Subject.swift */; };
+		BCC96A1B28C903030086FD49 /* MessagePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC96A1A28C903030086FD49 /* MessagePublisher.swift */; };
+		BCC96A1D28C903AF0086FD49 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC96A1C28C903AF0086FD49 /* Car.swift */; };
+		BCC96A1F28C904210086FD49 /* Pedestrian.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC96A1E28C904210086FD49 /* Pedestrian.swift */; };
 		BCD2079828AE8C240027DBCA /* PaymentAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2079728AE8C240027DBCA /* PaymentAF.swift */; };
 		BCD2079A28AE8C660027DBCA /* CardPaymentAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2079928AE8C660027DBCA /* CardPaymentAF.swift */; };
 		BCD2079C28AE8C6E0027DBCA /* ApplePaymentAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2079B28AE8C6E0027DBCA /* ApplePaymentAF.swift */; };
@@ -82,6 +88,12 @@
 		BC95060628B09DC7002D30EA /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		BC95060828B09E13002D30EA /* CreditCardsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardsCollection.swift; sourceTree = "<group>"; };
 		BC95060A28B09E9E002D30EA /* CreditCardsIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardsIterator.swift; sourceTree = "<group>"; };
+		BCC96A1428C9024A0086FD49 /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
+		BCC96A1628C9027D0086FD49 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		BCC96A1828C902A40086FD49 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		BCC96A1A28C903030086FD49 /* MessagePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePublisher.swift; sourceTree = "<group>"; };
+		BCC96A1C28C903AF0086FD49 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		BCC96A1E28C904210086FD49 /* Pedestrian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedestrian.swift; sourceTree = "<group>"; };
 		BCD2079728AE8C240027DBCA /* PaymentAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAF.swift; sourceTree = "<group>"; };
 		BCD2079928AE8C660027DBCA /* CardPaymentAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentAF.swift; sourceTree = "<group>"; };
 		BCD2079B28AE8C6E0027DBCA /* ApplePaymentAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePaymentAF.swift; sourceTree = "<group>"; };
@@ -121,6 +133,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC0DC24328CA241400EF8A8D /* State */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 		BC5D5DAA28C124BB00C2B356 /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +182,8 @@
 		BC9505EE28B09453002D30EA /* Behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				BC0DC24328CA241400EF8A8D /* State */,
+				BCC96A1328C8F3DE0086FD49 /* Observer */,
 				BC5D5DB528C1284300C2B356 /* Memento */,
 				BC5D5DAA28C124BB00C2B356 /* Mediator */,
 				BC95060528B09D29002D30EA /* Iterator */,
@@ -204,6 +225,19 @@
 				BC95060A28B09E9E002D30EA /* CreditCardsIterator.swift */,
 			);
 			path = Iterator;
+			sourceTree = "<group>";
+		};
+		BCC96A1328C8F3DE0086FD49 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				BCC96A1428C9024A0086FD49 /* TrafficLight.swift */,
+				BCC96A1628C9027D0086FD49 /* Observer.swift */,
+				BCC96A1828C902A40086FD49 /* Subject.swift */,
+				BCC96A1A28C903030086FD49 /* MessagePublisher.swift */,
+				BCC96A1C28C903AF0086FD49 /* Car.swift */,
+				BCC96A1E28C904210086FD49 /* Pedestrian.swift */,
+			);
+			path = Observer;
 			sourceTree = "<group>";
 		};
 		BCD2079628AE8C0A0027DBCA /* AbstractFactory */ = {
@@ -378,12 +412,15 @@
 			files = (
 				BCE6009A28AC387D009F4DE8 /* CardPayment.swift in Sources */,
 				BCD2079A28AE8C660027DBCA /* CardPaymentAF.swift in Sources */,
+				BCC96A1D28C903AF0086FD49 /* Car.swift in Sources */,
 				BC5D5DBB28C1294000C2B356 /* Carataker.swift in Sources */,
 				BCD207AC28AE8EF20027DBCA /* PaymentMethodClient.swift in Sources */,
 				BCE6008228AC377B009F4DE8 /* ViewController.swift in Sources */,
 				BC5D5DAE28C1252D00C2B356 /* Colleague.swift in Sources */,
 				BC9505E728B082B9002D30EA /* PrototypeCard.swift in Sources */,
 				BC9505E928B0839B002D30EA /* VisaCard.swift in Sources */,
+				BCC96A1528C9024A0086FD49 /* TrafficLight.swift in Sources */,
+				BCC96A1728C9027D0086FD49 /* Observer.swift in Sources */,
 				BC9505F128B09522002D30EA /* ApprovedLoanHandler.swift in Sources */,
 				BCE6007E28AC377B009F4DE8 /* AppDelegate.swift in Sources */,
 				BC95060B28B09E9E002D30EA /* CreditCardsIterator.swift in Sources */,
@@ -407,6 +444,7 @@
 				BC5D5DAC28C124FF00C2B356 /* Mediator.swift in Sources */,
 				BC5D5DB728C1287C00C2B356 /* ArticleMemento.swift in Sources */,
 				BC9505FE28B09925002D30EA /* CreditCardReciver.swift in Sources */,
+				BCC96A1B28C903030086FD49 /* MessagePublisher.swift in Sources */,
 				BCE600A028AC41C6009F4DE8 /* StripePayment.swift in Sources */,
 				BC95060428B09AC8002D30EA /* CreditCardInvoker.swift in Sources */,
 				BCD207A628AE8DDC0027DBCA /* AbstractFactory.swift in Sources */,
@@ -414,6 +452,7 @@
 				BCD207AA28AE8E9A0027DBCA /* MonthlyAppleFactory.swift in Sources */,
 				BCD207AF28AE92270027DBCA /* Card.swift in Sources */,
 				BCE6009828AC3866009F4DE8 /* ApplePayment.swift in Sources */,
+				BCC96A1928C902A40086FD49 /* Subject.swift in Sources */,
 				BCD207A228AE8D140027DBCA /* MonthlyMethod.swift in Sources */,
 				BC5D5DB028C1258800C2B356 /* ConcreteColleagueFirst.swift in Sources */,
 				BC5D5DB228C1260800C2B356 /* ConcreteColleagueSecond.swift in Sources */,
@@ -421,6 +460,7 @@
 				BCE6009E28AC38F2009F4DE8 /* PaymentFactory.swift in Sources */,
 				BC95060928B09E13002D30EA /* CreditCardsCollection.swift in Sources */,
 				BC95060028B099F4002D30EA /* CreditCardActivateCommand.swift in Sources */,
+				BCC96A1F28C904210086FD49 /* Pedestrian.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

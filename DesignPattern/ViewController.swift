@@ -24,7 +24,8 @@ class ViewController: UIViewController {
 //        testIterator()
 //        testMediator()
 //        testMemento()
-        testObserver()
+//        testObserver()
+        testState()
     }
 
     // MARK: - CREATIONAL
@@ -113,6 +114,22 @@ class ViewController: UIViewController {
     }
     
     private func testObserver() {
+        let car = Car()
+        let pedestrian = Pedestrian()
+        var trafficLight = TrafficLight(status: "CAR_GREEN")
+        let messagePublisher = MessagePublisher()
+        messagePublisher.attach(o: car)
+        messagePublisher.attach(o: pedestrian)
+        messagePublisher.notifyUpdate(trafficLight: trafficLight)
+        sleep(2)
+        trafficLight.status = "CAR_RED"
+        messagePublisher.notifyUpdate(trafficLight: trafficLight)
+        sleep(2)
+        trafficLight.status = "CAR_GREEN"
+        messagePublisher.notifyUpdate(trafficLight: trafficLight)
+    }
+    
+    private func testState() {
         
     }
     
