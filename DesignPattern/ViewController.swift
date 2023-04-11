@@ -25,8 +25,8 @@ class ViewController: UIViewController {
 //        testMediator()
 //        testMemento()
 //        testObserver()
-        testState()
-        
+//        testState()
+        testInterpreter()
         /////////////////////////
     }
 
@@ -143,6 +143,10 @@ class ViewController: UIViewController {
         context.setState(state: Silent())
         context.alert()
         context.alert()
+    }
+    
+    private func testInterpreter() {
+        
     }
     
     // MARK: - BEHAVIORAL
